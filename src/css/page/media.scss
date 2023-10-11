@@ -1,0 +1,641 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+@import "./../modules/nav";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container{
+		max-width: 880px;
+	}
+	.wrapper{
+		font-size: 16px;
+	}
+	.preload-bg{
+		&__title{
+			font-size: 42px;
+			line-height: 52px;	
+		}
+	}
+	.s-first-screen{
+		&-content{
+			&__title{
+				font-size: 96px;
+				line-height: 100px;
+			}
+		}
+		&__welcome{
+			font-size: 42px;
+			line-height: 52px;	
+		}
+	}
+	@keyframes move-element {
+		0%{
+			left: 50%;
+			top: 50%;
+		}
+		100%{
+			left: 32.2%;
+			top: 31.7%;
+		}
+	}
+	.s-what{
+		&__text{
+			width: 100%;
+			margin-top: 24px;
+		}
+		&__year{
+			width: 100%;
+			&-content{
+				padding: 58px 70px 27px 70px;
+			}
+			&-text{
+				align-self: auto;
+			}
+			&-number{
+				font-size: 280px;
+				line-height: 240px;
+			}
+		}
+	}
+	.text-image{
+		&__title{
+			font-size: 90px;
+			line-height: 100px;
+		}
+		&__elem{
+			left: 56%;
+			font-size: 120px;
+		}
+	}
+	.s-base{
+		&__img-wrapper{
+			width: 100%;
+			&+&{
+				margin-top: 24px;
+			}
+		}
+		&__img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.s-see{
+		&__item{
+			font-size: 80px;
+			line-height: 100px;
+			&-wrapper{
+				height: 105px;
+			}
+		}
+	}
+	.s-career{
+		&__title{
+			font-size: 150px;
+			line-height: 190px;
+		}
+		&__text{
+			font-size: 62px;
+			line-height: 74px;
+		}
+		&__content{
+			padding: 120px 60px;
+			min-height: 490px;
+		}
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper{
+		font-size: 15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	@include nav-module($color_primary, #fff);
+	.nav {
+		display: flex;
+		flex-direction: column;
+		z-index: 3;
+		top: -100%;
+		bottom: auto;
+		&-item {
+			color: #fff;
+			background: none;
+			& + & {
+				margin-left: 0;
+				margin-top: 20px;
+			}
+			&::after{
+				display: none;
+			}
+			&:hover, &:focus{
+				background: none;
+				color: #fff;
+			}
+		}
+	}
+	.header{
+		padding: 15px 0 0 0;
+		&__inner{
+			padding-bottom: 15px;
+		}
+	}
+	.preload-bg{
+		&__title{
+			font-size: 32px;
+			line-height: 46px;
+			margin-bottom: 24px;
+		}
+	}
+	.s-first-screen{
+		&__welcome{
+			font-size: 32px;
+			line-height: 46px;
+			margin-bottom: 24px;
+		}
+		&-content{
+			position: relative;
+			&__title{
+				font-size: 50px;
+				line-height: 70px;
+				width: 50%;
+			}
+			&__img-wrapper{
+				width: 50%;
+			}
+		}
+	}
+	@keyframes move-element {
+		0%{
+			left: 50%;
+			top: 50%;
+		}
+		100%{
+			left: 37%;
+			top: 32%;
+		}
+	}
+	.s-slogan{
+		&__content{
+			padding: 30px 50px;
+		}
+		&__title{
+			font-size: 36px;
+			line-height: 48px;
+		}
+	}
+	.s-what{
+		&__text{
+			font-size: 28px;
+			line-height: 42px;
+		}
+	}
+	.title{
+		font-size: 54px;
+    line-height: 72px;
+	}
+	.titled-text-card{
+		width: 100%;
+	}
+	.s-partner{
+		&__inner{
+			margin-bottom: -24px;
+		}
+	}
+	.partner-card{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	.s-work{
+		&__content{
+			padding: 40px 30px;
+		}
+		&__text{
+			margin-bottom: 30px;
+		}
+	}
+	.text-image{
+		&__wrapper{
+			min-height: 400px;
+		}
+		&:last-child{
+			justify-content: flex-end;
+		}
+		&__title{
+			width: 50%;
+			font-size: 52px;
+			line-height: 52px;
+		}
+		&__img-wrapper{
+			width: 50%;
+			&--width{
+				width: 40%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		&__content{
+			width: 80%;
+			.text-image{
+				&__title{
+					width: 100%;
+				}
+				&__img-wrapper{
+					width: 100%;
+				}
+			}
+		}
+		&--not-mb{
+			.text-image{
+				&__title{
+					width: 50%;
+				}
+				&__img-wrapper{
+					width: 50%;
+				}
+			}
+		}
+	}
+	.s-who{
+		.text-image{
+			&:nth-child(2){
+				.text-image__title{
+					width: 100%;
+					text-align: left;
+				}
+			}
+			&__content{
+				width: 50%;
+			}
+		}
+	}
+	.s-person-info{
+		&-content{
+			padding: 24px;
+			flex-wrap: wrap;
+			&__left{
+				width: 100%;
+			}
+			&__right{
+				width: 100%;
+			}
+			&__buttons{
+				&-line{
+					width: 60%;
+				}
+			}
+			&__text{
+				font-size: 24px;
+				line-height: 33px;
+				height: 275px;
+			}
+			&__btn{
+				height: 32px;
+			}
+		}
+	}
+	.s-see{
+		&__item{
+			font-size: 60px;
+			line-height: 80px;
+			&-wrapper{
+				height: 85px;
+			}
+		}
+	}
+	.footer{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__nav{
+			margin-top: 20px;
+		}
+	}
+	.s-career{
+		&__content{
+			padding: 70px 30px;
+			min-height: 380px;
+		}
+		&__text{
+			font-size: 42px;
+			line-height: 58px;
+			&--primary{
+				font-size: 56px;
+				line-height: 68px;
+			}
+		}
+		&__title{
+			font-size: 120px;
+			line-height: 140px;
+		}
+	}
+	.s-relocate{
+		&__title{
+			margin-bottom: 10px;
+		}
+		&__subtitle{
+			font-size: 28px;
+			line-height: 34px;
+		}
+		&__left{
+			width: 100%;
+		}
+		&__right{
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+	.s-contacts{
+		iframe{
+			height: 563px;
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper{
+		font-size: 14px;
+	}
+	.preload-bg{
+		&__title{
+			text-align: center;
+		}
+	}
+	.s-first-screen{
+		&__welcome{
+			text-align: center;
+		}
+	}
+	@keyframes move-element {
+		0%{
+			left: 50%;
+			top: 50%;
+		}
+		100%{
+			left: 50%;
+			top: 31%;
+		}
+	}
+	.titled-text-card{
+		&__title{
+			font-size: 28px;
+    	line-height: 34px;
+    	margin-bottom: 14px;
+		}
+	}
+	.s-work{
+		&__text{
+			width: 100%;
+		}
+	}
+	.text-image{
+		&:not(:last-child){
+			.text-image__title{
+				width: 77%;
+			}
+		}
+		&__img-wrapper{
+			&--width{
+				width: 37%;
+			}
+		}
+	}
+	.s-person-info{
+		&-content{
+			&__img-wrapper{
+				width: 50%;
+			}
+			&__right{
+				margin-top: 14px;
+			}
+		}
+	}
+	.s-see{
+		&__item{
+			font-size: 40px;
+			line-height: 60px;
+			&-wrapper{
+				height: 65px;
+			}
+		}
+	}
+	.s-career{
+		&__title{
+			font-size: 80px;
+			line-height: 100px;
+		}
+	}
+	.s-relocate{
+		&__text{
+			font-size: 28px;
+			line-height: 42px;
+		}
+	}
+	.s-contacts{
+		iframe{
+			height: 463px;
+		}
+	}
+	.stories-slider{
+		&__subtitle{
+			margin-top: 20px;
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.preload-bg{
+		&__title{
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 15px;
+		}
+	}
+	.s-first-screen{
+		&__welcome{
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 15px;
+		}
+		&-content{
+			&__title{
+				font-size: 26px;
+				line-height: 34px;
+			}
+		}
+	}
+	@keyframes move-element {
+		0%{
+			left: 50%;
+			top: 50%;
+		}
+		100%{
+			left: 50%;
+			top: 29%;
+		}
+	}
+	.s-slogan{
+		&__content{
+			padding: 20px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 14px;
+		}
+		&__text{
+			font-size: inherit;
+			line-height: inherit;
+		}
+	}
+	.s-what{
+		&__text{
+			font-size: 24px;
+			line-height: 36px;
+		}
+	}
+	.title{
+		font-size: 40px;
+    line-height: 52px;
+		margin-bottom: 20px;
+	}
+	.subtitle{
+		margin-bottom: 20px;
+	}
+	.titled-text-card{
+		&__content{
+			padding: 24px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+	.partner-card{
+		min-height: 200px;
+	}
+	.s-work{
+		&__content{
+			padding: 30px 16px;
+		}
+	}
+	.text-image{
+		&__wrapper{
+			min-height: 250px;
+		}
+		&:not(:last-child){
+			.text-image__title{
+				width: 50%;
+			}
+		}
+		&__title{
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	.s-person-info{
+		&-content{
+			&__buttons-line{
+				width: 30%;
+			}
+			&__btn{
+				font-size: 20px;
+			}
+			&__text{
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+	}
+	.s-see{
+		&__item{
+			font-size: 30px;
+			line-height: 48px;
+			&-wrapper{
+				height: 55px;
+			}
+		}
+	}
+	.footer{
+		padding-top: 0;
+		&__text{
+			order: 2;
+			margin-top: 50px;
+		}
+		&__nav{
+			flex-wrap: wrap;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: -20px;
+			&-item{
+				width: 48%;
+				margin-bottom: 20px;
+				&+&{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.s-career{
+		&__content{
+			padding: 40px 20px;
+			min-height: 200px;
+		}
+		&__text{
+			font-size: 28px;
+			line-height: 32px;
+			&--primary{
+				font-size: 32px;
+				line-height: 38px;
+			}
+		}
+		&__title{
+			font-size: 60px;
+			line-height: 70px;
+		}
+	}
+	.s-relocate{
+		.text-image{
+			&:not(:last-child){
+				.text-image__title{
+					width: 57%;
+				}
+			}
+		}
+		&__subtitle{
+			font-size: 22px;
+			line-height: 28px;
+		}
+		&__text{
+			font-size: 24px;
+			line-height: 32px;
+		}
+		&__right{
+			margin-top: 24px;
+		}
+	}
+	.s-contacts{
+		iframe{
+			height: 363px;
+		}
+		&__info{
+			font-size: 20px;
+			line-height: 34px;
+		}
+	}
+	.elem-img{
+		&__wrapper{
+			&--moon-3{
+				transform: translateY(97%);
+			}
+		}
+	}
+}

@@ -1,0 +1,463 @@
+extends ./pug/layout
+block content
+	.preload-bg
+		.preload-bg__title welcome to <span class="bold"><span class="primary">Zion</span> Development</span>
+
+	<!-- START HEADER -->
+	.header 
+		.container 
+			.header__inner 
+				.header__logo-wrapper 
+					img.header__logo(src="images/logo.svg")
+				.header__nav.nav 
+					a.nav-item.content-tab(href="#about") about us.
+					a.nav-item.content-tab(href="#career") careers.
+					a.nav-item.content-tab(href="#contacts") contacts.
+					a.nav-item.content-tab(href="#stories") #zionstories
+				+nav-btn 
+	<!-- END HEADER -->
+
+	<!-- START CONTENT ABOUT -->
+	.content.content--active.content--opacity-1.content__about
+		img.elem-img.elem-img--moon(src="images/moon.png")
+		img.elem-img.elem-img--one(src="images/wrapper-bg.jpg")
+		img.elem-img.elem-img--two(src="images/wrapper-bg.jpg")
+		img.elem-img.elem-img--three(src="images/wrapper-bg.jpg")
+		img.elem-img.elem-img--four(src="images/wrapper-bg.jpg")
+		img.elem-img.elem-img--austro(src="images/austro.png")
+		<!-- START SECTION FIRST-SCREEN -->
+		.section.s-first-screen.section--medium
+			.container
+				.s-first-screen__welcome welcome to <span class="bold"><span class="primary">Zion</span> Development</span>
+				.s-first-screen-content
+					.s-first-screen-content__img-wrapper 
+						img.s-first-screen-content__img(src="images/video/1.png")
+					.s-first-screen-content__title.s-first-screen-content__title--opacity Enterprise
+					.s-first-screen-content__title.s-first-screen-content__title--animated.s-first-screen-content__title--right Enterprise
+				.s-first-screen-content
+					.s-first-screen-content__title.s-first-screen-content__title--animated.s-first-screen-content__title--left Software
+					.s-first-screen-content__title.s-first-screen-content__title--opacity Software
+					.s-first-screen-content__img-wrapper 
+						img.s-first-screen-content__img(src="images/video/2.png")
+				.s-first-screen-content
+					.s-first-screen-content__img-wrapper 
+						img.s-first-screen-content__img(src="images/video/3.png")
+					.s-first-screen-content__title.s-first-screen-content__title--animated.s-first-screen-content__title--right Development
+					.s-first-screen-content__title.s-first-screen-content__title--opacity Development
+				.s-first-screen-content
+					.s-first-screen-content__title.s-first-screen-content__title--animated.s-first-screen-content__title--left COMPANY
+					.s-first-screen-content__title.s-first-screen-content__title--opacity COMPANY
+					.s-first-screen-content__img-wrapper
+						video.s-first-screen-content__img(src="images/flags-2.mp4" autoplay='' muted='' loop='' playsinline='' width="100%" heigh="98px" style="border-radius: 16px;")
+		<!-- END SECTION FIRST-SCREEN -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan.section--medium-pb
+			.container 
+				.s-slogan__inner
+					span.s-slogan__plus
+					span.s-slogan__plus
+					.s-slogan__content 
+						.s-slogan__title We make your goals a reality with our <span class="blue">software systems</span>
+						.s-slogan__text 
+							p ZION provides technology solutions to optimize your business/
+		<!-- END SECTION SLOGAN -->
+
+		<!-- START SECTION TICKER -->
+		.section.s-ticker
+			.ticker__item 
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+				img(src="images/ticker-1.svg" alt="#")
+			.ticker__item 
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+				img(src="images/ticker-2.svg" alt="#")
+		<!-- START SECTION TICKER -->
+
+		<!-- START SECTION WHAT -->
+		.section.s-what.section--long 
+			.container 
+				.title what <span class="gray">we do</span><span class="orange">/</span>
+				.s-what__inner.flex
+					.s-what__year
+						span.s-slogan__plus
+						span.s-slogan__plus
+						.s-what__year-content 
+							.s-what__year-number 7 
+							.s-what__year-text  years
+					.s-what__text 
+						p <span class="primary">ZION</span> brings over 7 years of experience in the FinTech sector, a solid track record, and enduring integration background in enterprise-grade projects to our client's disposal
+		<!-- END SECTION WHAT -->
+
+		<!-- START SECTION OFFER -->
+		.section.s-offer 
+			.container 
+				.title what we <span class="gray">offer</span><span class="orange">/</span>
+				.s-offer__cards.flex 
+					+titled-text-card("Enterprise Software Development")
+						p We work with companies that need to scale their business, whether they're looking to make a small change or overhaul their entire system. We're a close-knit team who loves collaborating on new features and turning ideas into reality.
+					+titled-text-card("Development & Analytics")
+						p We develop new features, build robust systems, and adjust our processes to meet your needs. Whether you need to analyze your company's financial data or learn more about your users' behavior, we are here to help.
+					+titled-text-card("Support Anytime & Anywhere")
+						p ZION offers a complete suite to bring the nativity of user experience and comprehensive security solutions for your clients.
+					+titled-text-card("Promotion & Partnerships")
+						p When you partner with Zion, you can rest assured that your marketing initiatives will be properly supported. Our team collaborates with various innovative companies to provide you with the tools and resources you need for your marketing activities.
+		<!-- END SECTION OFFER -->
+
+		<!-- START SECTION PARTNER -->
+		.section.s-partner.section--long 
+			.container
+				.title who we <span class="gray">partner with</span><span class="orange">/</span>
+				.s-partner__inner.flex 
+					+partner-card('images/partners/1.svg')
+					+partner-card('images/partners/2.svg')
+					+partner-card('images/partners/3.svg')
+		<!-- END SECTION PARTNER -->
+
+		<!-- START SECTION WORK -->
+		.section.s-work 
+			.container 
+				.title how we <span class="gray">work</span><span class="orange">/</span>
+				.s-work__inner 
+					span.s-work__plus
+					span.s-work__plus
+					.s-work__content.flex 
+						.s-work__text 
+							p You gain control over your workflow, not the other way around
+						.s-work__text 
+							p You bring your skills to exciting, challenging tasks and develop yourself professionally
+						.s-work__text 
+							p You choose whether to work flexible hours, a hybrid schedule, or a completely remote
+				.text-image__wrapper
+					.text-image__elem 👌
+					.text-image
+						.text-image__title.text-image__title--white Design with
+						.text-image__img-wrapper 
+							img.text-image__img(src="images/text-image/1.png")
+					.text-image
+						.text-image__img-wrapper.text-image__img-wrapper--width 
+							video(src='images/team.mp4' autoplay='' muted='' loop='' playsinline='' style="border-radius: 16px;")
+						.text-image__content
+							.text-image__title.text-image__title--inline intelligence,
+							.text-image__title.text-image__title--inline.text-image__title--space deliver <span class="ok">👌</span>  with
+							.text-image.text-image--not-mb
+								.text-image__title love
+								.text-image__img-wrapper 
+									img.text-image__img(src="images/text-image/3.png")
+		<!-- END SECTION WORK -->
+
+		<!-- START SECTION BASE -->
+		.section.s-base.section--long
+			.container 
+				.title where we’re <span class="gray">based</span><span class="orange">/</span>
+				.subtitle Axis Towers – a prime location in the heart of Tbilisi, Georgia
+				.s-base__cards.flex 
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/1.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/2.jpg")
+				.s-base__cards.flex 
+					.s-base__img-wrapper
+						.subtitle Cozy & relaxed – a workplace that <br>feels like home
+						img.s-base__img(src="images/base/3.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/4.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/5.jpg")
+				.s-base__cards.flex
+					.s-base__img-wrapper 
+						img.s-base__img(src="images/base/6.jpg")
+				.subtitle Eco & Green - healthy environment & healthy snacks 
+				.s-base__cards.flex
+					.s-base__img-wrapper 
+						img.s-base__img(src="images/base/7.jpg")
+				.s-base__cards.flex 
+					.s-base__img-wrapper
+						.subtitle Pet-friendly – we welcome you into our office with open arms and paws
+						img.s-base__img(src="images/base/8.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/9.jpg")
+				.s-base__cards.flex
+					.s-base__img-wrapper 
+						img.s-base__img(src="images/base/10.jpg")
+		<!-- END SECTION BASE -->
+
+		<!-- START SECTION WHO -->
+		.section.s-who 
+			.container
+				.title who <span class="gray">we are</span><span class="orange">/</span>
+				.text-image
+					.text-image__title.text-image__title--white TBILISI-BASED
+				.text-image
+					.text-image__img-wrapper
+						img.text-image__img(src="images/text-image/4.png")
+					.text-image__title.text-image__title--white MULTINATIONAL
+				.text-image
+					.text-image__content
+						.text-image__title COMPANY
+					.text-image__img-wrapper
+						img.text-image__img(src="images/text-image/5.png")
+				.s-work__inner 
+					span.s-work__plus
+					span.s-work__plus
+					.s-work__content.flex 
+						.s-work__text 
+							p Technical: Platform, Web, Mobile, QA, Devops, Project Managers
+						.s-work__text 
+							p Product: Product Managers, UI/UX Designers, Analytics
+						.s-work__text 
+							p Operations: Customer, Finance & Technical Support, AML/KYC
+						.s-work__text 
+							p Business Development: Sales & Key Account Managers
+						.s-work__text 
+							p Marketing: PR & SMM, Community, SEO/ASO, Affiliate, CRM
+		<!-- END SECTION WHO -->
+
+		<!-- START SECTION PERSON -->
+		.section.s-person-info 
+			.container 
+				.title what we <span class="gray">say</span><span class="orange">/</span>
+				.s-person-info__img-wrapper
+					img.s-person-info__img(src="images/quotes.svg")
+				.s-person-info__inner 
+					span.s-person-info__plus
+					span.s-person-info__plus
+					.swiper-container.person-info-slider#swiper
+						.swiper-wrapper 	
+							.swiper-slide 
+								.s-person-info-content 
+									.s-person-info-content__left
+										.s-person-info-content__img-wrapper 
+											img.s-person-info-content__img(src="images/person-slider/1.jpg")
+										.s-person-info-content__info Vladimir Aksenov, SEO 
+										.s-person-info-content__buttons 
+											.slider-arrows.person-info-slider-arrows
+												.slider-arrow.slider-arrow--prev.person-info-slider-arrow-prev
+													+icon("arrow-ios-left", "slider-arrow__icon")
+												.slider-arrow.slider-arrow--next.person-info-slider-arrow-next
+													+icon("arrow-ios-right", "slider-arrow__icon")
+											.s-person-info-content__buttons-line
+											.person-info-slider__pagination
+									.s-person-info-content__right
+										.s-person-info-content__text 
+											p You can grow professionally in this company. The atmosphere here is very productive, you can easily deal with the colleagues and build the working processes, management team always helps in your initiatives. 
+											p I was lucky to join the company in 2020... by referral from my friends (they were actively recruiting at that time). 
+											p The main thing which makes Zion special is a very strong and motivated team, management who clearly states the product, team & processes development strategy. 
+											p Most of all I like atmosphere in the team & future development possibilities.❤️
+										.s-person-info-content__btn
+							.swiper-slide 
+								.s-person-info-content 
+									.s-person-info-content__left
+										.s-person-info-content__img-wrapper 
+											img.s-person-info-content__img(src="images/person-slider/2.jpg")
+										.s-person-info-content__info Elizaveta Bystrova, Technical Writer
+										.s-person-info-content__buttons 
+											.slider-arrows.person-info-slider-arrows
+												.slider-arrow.slider-arrow--prev.person-info-slider-arrow-prev
+													+icon("arrow-ios-left", "slider-arrow__icon")
+												.slider-arrow.slider-arrow--next.person-info-slider-arrow-next
+													+icon("arrow-ios-right", "slider-arrow__icon")
+											.s-person-info-content__buttons-line
+											.person-info-slider__pagination
+									.s-person-info-content__right
+										.s-person-info-content__text 
+											p I have chosen Zion as it was interesting for me to try the new industry - fintech, it was also attractive for me that the company is located in Georgia. The company gives opportunities to grow & develop. At the starting point I pointed out which new tasks I would like to deal with & I was given this chance. I also consider a cool team, lack of bureaucracy, nice office in Tbilisi, relocation support and corporate events as advantages.
+										.s-person-info-content__btn 
+							.swiper-slide 
+								.s-person-info-content 
+									.s-person-info-content__left
+										.s-person-info-content__img-wrapper 
+											img.s-person-info-content__img(src="images/person-slider/3.jpg")
+										.s-person-info-content__info Filipp Vasilyev, Web Developers Team Lead
+										.s-person-info-content__buttons 
+											.slider-arrows.person-info-slider-arrows
+												.slider-arrow.slider-arrow--prev.person-info-slider-arrow-prev
+													+icon("arrow-ios-left", "slider-arrow__icon")
+												.slider-arrow.slider-arrow--next.person-info-slider-arrow-next
+													+icon("arrow-ios-right", "slider-arrow__icon")
+											.s-person-info-content__buttons-line
+											.person-info-slider__pagination
+									.s-person-info-content__right
+										.s-person-info-content__text 
+											p Great people, effective teams, interesting projects & tasks. You can choose a task which better corresponds to your expectations and contribute to the total result of the company’s operation. Individual approach to the employees, no bureaucracy, easy communications. Off-work time together and highest level of corporate events.
+		<!-- END SECTION PERSON -->
+
+		<!-- START SECTION SEE -->
+		.section.s-see.section--long
+			.container
+				.s-see__item-wrapper 
+					.s-see__item.s-see__item--up.vacancy-btn 
+						span.s-see__item-text see our job listings
+						span.s-see__item-elem >
+					.s-see__item.s-see__item--down.vacancy-btn 
+						span.s-see__item-text see our job listings
+						span.s-see__item-elem >
+		<!-- END SECTION SEE -->
+	<!-- END CONTENT ABOUT -->
+
+	<!-- START CONTENT CAREER -->
+	.content.content__career
+		.elem-img__wrapper.elem-img__wrapper--moon-2
+			img(src="images/moon-2.png")
+		img.elem-img.elem-img--five(src="images/wrapper-bg.jpg")
+		<!-- START SECTION CAREER -->
+		.section.s-career.section--short 
+			.container 
+				.s-career__title careers<span class="orange">/</span>
+				.s-career__inner
+					span.s-slogan__plus
+					span.s-slogan__plus
+					.s-career__content 
+						.s-career__text-wrapper
+							span.s-career__text#text
+							span.s-career__text--primary |
+		<!-- START SECTION CAREER -->
+
+		<!-- START SECTION CHOOSE -->
+		.section.s-choose 
+			.container 
+				.title what we <span class="gray">offer</span><span class="orange">/</span>
+				.s-offer__cards.flex 
+					+titled-text-card("Wellness Program")
+						p We share your enthusiasm for sports and are ready to cover a part of your athletic expenses.
+					+titled-text-card("Dedicated Team")
+						p No red tape. No hierarchy. Just people who are passionate about what they do.
+					+titled-text-card("Health Insurance")
+						p We’re here for you! ZION will cover any medical expenses that you may incur.
+					+titled-text-card("Corporate Education")
+						p We provide all kinds of resources to help our team develop inside and outside the workplace.
+		<!-- END SECTION CHOOSE -->
+
+		<!-- START SECTION RELOCATE -->
+		.section.s-relocate.section--short-pb.section--long-pt
+			.container 
+				.text-image
+					.text-image__title.text-image__title--white GAMARJOBA!
+					.text-image__img-wrapper 
+						img.text-image__img(src="images/text-image/6.png")
+				.title.title--big <span class="gray">Relocate with us</span><span class="orange">/</span>
+				.s-relocate__img-wrapper
+					img.s-relocate__img.s-base__img(src="images/relocate/1.jpg")
+				.s-relocate__inner.section--short-pt
+					.s-relocate__left
+						.s-relocate__title.title relocate <span class="gray">with us</span><span class="orange">/</span>
+						.s-relocate__subtitle We can help you move to Tbilisi
+					.s-relocate__right
+						.s-relocate__text 
+							p #TravelAssistance #LogisticsSupport 
+							p #AccommodationSupport
+							p #LegalAssistance
+							p #FamilyRelocationSupport #SettlingIn
+							p #LeisureActivities
+							p #GeorgianLanguageStudies
+		<!-- END SECTION RELOCATE -->
+
+		<!-- START SECTION BASE -->
+		.section.s-base.section--medium-pt.section--long-pb
+			.container 
+				.s-base__cards.flex.flex--start
+					.s-base__img-wrapper
+						.subtitle Come see Georgia with us
+						img.s-base__img(src="images/base/11.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/12.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/13.jpg")
+						.subtitle.subtitle--without-mb Explore all this beautiful land has <br>to offer!
+				.s-base__cards.flex 
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/14.jpg")
+					.s-base__img-wrapper
+						img.s-base__img(src="images/base/15.jpg")
+
+		<!-- END SECTION BASE -->
+	<!-- END CONTENT CAREER -->
+
+	<!-- START CONTENT STORIES -->
+	.content.content__stories
+		.elem-img__wrapper.elem-img__wrapper--moon-3
+			img(src="images/moon-3.png")
+		img.elem-img.elem-img--six(src="images/wrapper-bg.jpg")
+		<!-- START SECTION STORIES -->
+		.section.s-stories.section--short-pt.section--long-pb 
+			.container 
+				.s-stories__title.s-career__title zion<span class="gray">Stories</span>
+			.swiper-container.stories-slider 
+				.swiper-wrapper 
+					.swiper-slide 
+						.stories-slider__img-wrapper
+							img.stories-slider__img.s-base__img(src="images/slider/1.jpg")
+							.stories-slider__subtitle Руби закрыл спринт @rubi
+					.swiper-slide 
+						.stories-slider__img-wrapper
+							img.stories-slider__img.s-base__img(src="images/slider/2.jpg")
+							.stories-slider__subtitle мотор добил цветные иконки @motor
+					.swiper-slide 
+						.stories-slider__img-wrapper
+							img.stories-slider__img.s-base__img(src="images/slider/3.jpg")
+							.stories-slider__subtitle Руби закрыл спринт @rubi
+		<!-- END SECTION STORIES -->
+	<!-- END CONTENT STORIES -->
+
+	<!-- START CONTENT CONTACTS -->
+	.content.content__contacts
+		img.elem-img.elem-img--six(src="images/wrapper-bg.jpg")
+		img.elem-img.elem-img--seven(src="images/wrapper-bg.jpg")
+		<!-- START SECTION CONTACTS -->
+		.section.s-contacts.section--short-pt.section--long-pb 
+			.container 
+				.s-contacts__title.s-career__title contacts<span class="orange">/</span>
+				iframe(src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=17&maptype=roadmap&q=37m%20Ilia%20Chavchavadze%20Avenue%2C%20T'bilisi%2C%20Georgia" frameborder="0" width="100%" height="100%") 
+				.s-contacts__info 
+					p
+						| Email: 
+						a(rel='noreferrer noopener' href='mailto:info@devzion.com' target='_blank') info@devzion.com
+						br
+						| СЕО: Vitalii Zinovev
+						br
+						| Georgia, Tbilisi, 37m Ilia Chavchavadze Avenue
+
+		<!-- START SECTION CONTACTS -->
+
+	<!-- START FOOTER -->
+	.footer.section--long 
+		.container 
+			.footer__inner 
+				.footer__text © 2022 Zion Development
+				.footer__nav 
+					a.footer__nav-item.content-tab(href="#about") about us.
+					a.footer__nav-item.content-tab(href="#career") careers.
+					a.footer__nav-item.content-tab(href="#contacts") contacts.
+					a.footer__nav-item.content-tab(href="#stories") #zionstories
+	<!-- END FOOTER -->

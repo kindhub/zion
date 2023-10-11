@@ -1,0 +1,60 @@
+@keyframes move-l-to-r {
+  from {
+      left: 0;
+  }
+  to {
+      left: 100%;
+      transform: translateX(-100%);
+  }
+}
+@keyframes move-r-to-l {
+  from {
+      right: 0;
+  }
+  to {
+      right: 100%;
+      transform: translateX(100%);
+  }
+}
+@keyframes hide-element {
+  from {
+      opacity: 100%;
+  }
+  to {
+      opacity: 0;
+  }
+}
+@keyframes show-element {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 100%;
+  }
+}
+@keyframes move-element {
+  0% {
+      left: 50%;
+      top: 50%;
+  }
+  100% {
+    left: 34.7%;
+    top: 29%;
+  }
+}
+@keyframes text-move-left {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-800%);
+  }
+}
+@keyframes text-move-right {
+  0%{
+    transform: translateX(-800%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
